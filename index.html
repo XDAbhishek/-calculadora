@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href = "index.css">
+  <title>Calculator | Abhishek</title>
+</head>
+<body>
+  <br>
+
+  <div class="container col-md-3">
+    <br>
+  <form>
+    <input type="text" id="display" class="form-control input_place" placeholder="0" disabled value="">
+  </form>
+  <br>
+  <table >
+    <th></th><th></th><th></th><th></th><th></th>
+    <tr>
+      <td>
+        <button type="button" class="btn btn-info" value="7" id="number" onclick="func(7)">7</button> 
+      </td>
+      <td>
+        <button type="button" class="btn btn-info" value="8" id="number" onclick="func(8)">8</button> 
+      </td>
+      <td>
+        <button type="button" class="btn btn-info" value="9" id="number" onclick="func(9)">9</button> 
+      </td>
+      <td></td><td></td><td></td><td></td> 
+      <td>
+        <button type="button" class="btn btn-warning" value="+" id="number" onclick="oper('+')">+</button> 
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button type="button" class="btn btn-info" value="4" id="number" onclick="func(4)">4</button> 
+      </td>
+      <td>
+        <button type="button" class="btn btn-info" value="5" id="number" onclick="func(5)">5</button> 
+      </td>
+      <td>
+        <button type="button" class="btn btn-info" value="6" id="number" onclick="func(6)">6</button> 
+      </td>
+      <td></td><td></td><td></td><td></td> 
+      <td>
+        <button type="button" class="btn btn-warning " value="-" id="number" onclick="oper('-')">-</button> 
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button type="button" class="btn btn-info" value="1" id="number" onclick="func(1)">1</button> 
+      </td>
+      <td>
+        <button type="button" class="btn btn-info" value="2" id="number" onclick="func(2)">2</button> 
+      </td>
+      <td>
+        <button type="button" class="btn btn-info" value="3" id="number" onclick="func(3)">3</button> 
+      </td>
+      <td></td><td></td><td></td><td></td> 
+      <td>
+        <button type="button" class="btn btn-warning " value="X" id="number" onclick="oper('x')">x</button> 
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button type="button" class="btn btn-info" onclick="clearAll()">C</button> 
+      </td>
+      <td>
+        <button type="button" class="btn btn-info" onclick="func(0)">0</button> 
+      </td>
+      <td>
+        <button type="button" class="btn btn-info" onclick="equal()">=</button> 
+      </td>
+      <td></td><td></td><td></td><td></td> 
+      <td>
+        <button type="button" class="btn btn-warning " value="%" id="number" onclick="oper('%')">%</button> 
+      </td>
+    </tr>
+  </table>
+
+</div>
+<script src="index.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
